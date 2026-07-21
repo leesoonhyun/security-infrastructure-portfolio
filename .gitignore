@@ -1,0 +1,50 @@
+# 공개 포트폴리오에 원본 실습 환경과 비밀정보가 들어가지 않도록 기본 차단
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+credentials*
+secrets*
+
+# 가상머신·실행파일·악성코드·대용량 원본
+*.ova
+*.ovf
+*.iso
+*.vmdk
+*.vdi
+*.qcow2
+*.img
+*.exe
+*.dll
+*.bin
+*.msi
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# 로그·캡처·DB·원본 문서
+*.log
+*.pcap
+*.pcapng
+*.sql
+*.db
+*.sqlite*
+*.pdf
+*.docx
+*.pptx
+raw/
+private/
+originals/
+
+# 운영체제·편집기 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+

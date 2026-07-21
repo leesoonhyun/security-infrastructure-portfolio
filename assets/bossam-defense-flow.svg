@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Bossam Games 방어 흐름</title>
+  <desc id="desc">외부 시험 트래픽이 pfSense, DMZ 웹, 내부 DB로 흐르고 Suricata와 Wazuh가 네트워크와 호스트 이벤트를 수집하는 구성</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071426"/><stop offset="1" stop-color="#102a43"/></linearGradient>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#fb7185"/></marker>
+  </defs>
+  <rect width="1200" height="620" rx="26" fill="url(#bg2)"/>
+  <text x="55" y="55" fill="#fff" font-size="28" font-weight="700" font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif">Bossam Games · 예방 + 탐지 + 검증</text>
+  <text x="55" y="85" fill="#9fb3c8" font-size="14" font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif">격리된 교육망의 공격 흐름과 로그 수집 지점을 단순화한 공개용 구성</text>
+  <g font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif">
+    <g transform="translate(50 180)"><rect width="170" height="110" rx="15" fill="#4a2d31" stroke="#fb7185"/><text x="85" y="44" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Lab Attacker</text><text x="85" y="72" text-anchor="middle" fill="#f8c8cf" font-size="13">허가된 시험 트래픽</text></g>
+    <g transform="translate(300 180)"><rect width="170" height="110" rx="15" fill="#153f5a" stroke="#38bdf8"/><text x="85" y="44" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">pfSense</text><text x="85" y="72" text-anchor="middle" fill="#b9dff0" font-size="13">구간·NAT·정책</text></g>
+    <g transform="translate(550 180)"><rect width="170" height="110" rx="15" fill="#183b46" stroke="#2dd4bf"/><text x="85" y="44" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">DMZ Web</text><text x="85" y="72" text-anchor="middle" fill="#b9e8df" font-size="13">웹·접근 로그</text></g>
+    <g transform="translate(800 180)"><rect width="170" height="110" rx="15" fill="#312e55" stroke="#a78bfa"/><text x="85" y="44" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Internal DB</text><text x="85" y="72" text-anchor="middle" fill="#d8cef8" font-size="13">최소 권한·분리</text></g>
+    <path d="M220 235 H300" stroke="#38bdf8" stroke-width="4" marker-end="url(#a2)"/>
+    <path d="M470 235 H550" stroke="#38bdf8" stroke-width="4" marker-end="url(#a2)"/>
+    <path d="M720 235 H800" stroke="#38bdf8" stroke-width="4" marker-end="url(#a2)"/>
+    <g transform="translate(300 400)"><rect width="220" height="110" rx="15" fill="#4a3a21" stroke="#fbbf24"/><text x="110" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Suricata / Snort</text><text x="110" y="72" text-anchor="middle" fill="#f5dfa7" font-size="13">네트워크 경보</text></g>
+    <g transform="translate(655 400)"><rect width="220" height="110" rx="15" fill="#26425f" stroke="#60a5fa"/><text x="110" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Wazuh</text><text x="110" y="72" text-anchor="middle" fill="#c7ddf8" font-size="13">호스트·인증·파일 이벤트</text></g>
+    <g transform="translate(980 400)"><rect width="170" height="110" rx="15" fill="#3d3659" stroke="#c4b5fd"/><text x="85" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Review</text><text x="85" y="72" text-anchor="middle" fill="#ddd6fe" font-size="13">시간순 상관분석</text></g>
+    <path d="M385 290 V400" stroke="#fb7185" stroke-width="3" marker-end="url(#a3)"/>
+    <path d="M635 290 C635 350 765 340 765 400" fill="none" stroke="#fb7185" stroke-width="3" marker-end="url(#a3)"/>
+    <path d="M885 290 C885 350 765 340 765 400" fill="none" stroke="#fb7185" stroke-width="3" marker-end="url(#a3)"/>
+    <path d="M520 455 H655" stroke="#38bdf8" stroke-width="4" marker-end="url(#a2)"/>
+    <path d="M875 455 H980" stroke="#38bdf8" stroke-width="4" marker-end="url(#a2)"/>
+  </g>
+</svg>
+
