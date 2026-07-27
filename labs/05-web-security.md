@@ -81,3 +81,6 @@ WAF는 취약한 코드를 고치는 대체물이 아니라, 패치 전후의 �
 - 강의 슬라이드를 복사하지 않고 직접 재현한 화면과 본인 문장만 사용합니다.
 - 성공 화면이 없으면 `완료`가 아니라 `실습` 또는 `진행 중`으로 표시합니다.
 
+## 상세 복습 노트
+
+- [2026-06-24 웹 보안 실습 복습 — SQL Injection·CSRF·세션 보안](https://legendary-zenith-e52.notion.site/2026-06-24-SQL-Injection-CSRF-3aa64fddf16c816e8035d016826f1a93) — 수동 SQL Injection, sqlmap, Blind SQL Injection, CSRF, DVWA 구축·오류 해결, Weak Session ID 학습 기록
