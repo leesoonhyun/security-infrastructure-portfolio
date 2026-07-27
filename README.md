@@ -21,6 +21,8 @@
 | 프로필 | 비전공 전환 배경과 현장 경험의 연결 | [PROFILE.md](PROFILE.md) |
 | 전체 과정 | 인프라 구축부터 공격 검증·악성코드 기초까지 | [CURRICULUM.md](CURRICULUM.md) |
 | 기술 증거 | 기술별 사용 맥락·행동·검증 방법·수준 | [SKILLS_EVIDENCE.md](SKILLS_EVIDENCE.md) |
+| 인프라 기초 | 네트워크·Linux·서버 구축과 기본 점검 절차 | [labs/01-network-linux-foundation.md](labs/01-network-linux-foundation.md) |
+| 보안 운영 | 방화벽·IDS·Wazuh·모니터링·로그 가시성 | [labs/02-security-operations.md](labs/02-security-operations.md) |
 | 프로젝트 1 | SimmitPay 중앙 로그 수집 인프라 | [projects/01-simmitpay-central-logging.md](projects/01-simmitpay-central-logging.md) |
 | 프로젝트 2 | Bossam Games 보안 인프라와 공격 검증 | [projects/02-bossam-security-infrastructure.md](projects/02-bossam-security-infrastructure.md) |
 | CTF | VulnHub 사례와 방어 관점 회고 | [labs/03-vulnhub-ctf.md](labs/03-vulnhub-ctf.md) |
