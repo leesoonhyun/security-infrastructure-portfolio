@@ -13,6 +13,7 @@
 - 팀 워게임: 3단원 팀 워게임 3위(팀 성과)
 - CTF·취약 환경: VulnHub와 교육용 워게임 10개 이상 실습. 5개는 로컬 근거 확인, DoubleTrouble·Momentum·Potato·Venus 등은 증거 보완 상태를 표시해 문서화
 - 웹 보안: OWASP Juice Shop 17개 도전 과제 해결, 39쪽 개인 실습 보고서 작성
+- AI 활용: Codex·Gemini로 자료 구조화·보고서·영상·편집을 보조하고, 원본 대조·실행 검증·비식별화 후 GitHub·Notion·PPT로 정리
 - 목표 직무: 보안 인프라 운영, 보안관제/SOC, 네트워크·시스템 운영
 
 ## 포트폴리오 구성
@@ -22,6 +23,7 @@
 | 프로필 | 비전공 전환 배경과 현장 경험의 연결 | [PROFILE.md](PROFILE.md) |
 | 전체 과정 | 인프라 구축부터 공격 검증·악성코드 기초까지 | [CURRICULUM.md](CURRICULUM.md) |
 | 기술 증거 | 기술별 사용 맥락·행동·검증 방법·수준 | [SKILLS_EVIDENCE.md](SKILLS_EVIDENCE.md) |
+| AI 활용 | AI 보조 작업과 사람 검증·공개 절차 | [AI_WORKFLOW.md](AI_WORKFLOW.md) |
 | 인프라 기초 | 네트워크·Linux·서버 구축과 기본 점검 절차 | [labs/01-network-linux-foundation.md](labs/01-network-linux-foundation.md) |
 | 보안 운영 | 방화벽·IDS·Wazuh·모니터링·로그 가시성 | [labs/02-security-operations.md](labs/02-security-operations.md) |
 | 프로젝트 1 | SimmitPay 중앙 로그 수집 인프라 | [projects/01-simmitpay-central-logging.md](projects/01-simmitpay-central-logging.md) |
@@ -58,6 +60,13 @@ flowchart LR
 - 분석 기초: BOF·포맷스트링 취약 코드, Linux 권한 상승 원인, FlareVM, PE·DLL·VA/RVA 개념
 
 모든 기술은 `학습`, `실습`, `프로젝트` 수준으로 구분해 표기하며, 상용 환경 운영 경력으로 표현하지 않습니다.
+
+## AI 활용 방식
+
+- Codex·Gemini에 목표·조건·출력 형식을 설명하고, 학습자료·오류·로그·보고서 초안을 구조화합니다.
+- 답변을 그대로 사용하지 않고 원본 자료, 직접 실행 결과와 로그를 대조해 누락·과장·분류 오류를 수정합니다.
+- 교육 중 처음 도입한 GitHub·Notion을 학습자료·프로젝트 관리와 공개 포트폴리오 운영에 연결했습니다.
+- 구체적인 사례와 검증 절차는 [AI 활용 및 검증 워크플로](AI_WORKFLOW.md)에 정리했습니다.
 
 ## 공개 원칙
 
