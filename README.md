@@ -9,7 +9,8 @@
 ## 한눈에 보기
 
 - 교육: `[이스트캠프] 가디언즈 정보보호 및 보안 인프라 운영 관리`, 2026.03.24 - 2026.08.07, 총 736시간 과정 이수 중
-- 팀 프로젝트: 인프라 통합 구축 1회, 보안 인프라 구축·공격 검증 1회
+- 팀 프로젝트 3회: 인프라 통합 구축 1회, 보안 인프라 구축·공격 검증 1회, 웹 서비스 방어체계 구축·재검증 1회
+- 팀 워게임: 3단원 팀 워게임 3위(팀 성과)
 - CTF·취약 환경: VulnHub와 교육용 워게임 10개 이상 실습. 5개는 로컬 근거 확인, DoubleTrouble·Momentum·Potato·Venus 등은 증거 보완 상태를 표시해 문서화
 - 웹 보안: OWASP Juice Shop 17개 도전 과제 해결, 39쪽 개인 실습 보고서 작성
 - 목표 직무: 보안 인프라 운영, 보안관제/SOC, 네트워크·시스템 운영
@@ -25,6 +26,7 @@
 | 보안 운영 | 방화벽·IDS·Wazuh·모니터링·로그 가시성 | [labs/02-security-operations.md](labs/02-security-operations.md) |
 | 프로젝트 1 | SimmitPay 중앙 로그 수집 인프라 | [projects/01-simmitpay-central-logging.md](projects/01-simmitpay-central-logging.md) |
 | 프로젝트 2 | Bossam Games 보안 인프라와 공격 검증 | [projects/02-bossam-security-infrastructure.md](projects/02-bossam-security-infrastructure.md) |
+| 프로젝트 3 | TENsion·EstMall 보안 인프라 구축과 공격·방어 검증 | [projects/03-tension-estmall-security-project.md](projects/03-tension-estmall-security-project.md) |
 | CTF | VulnHub 사례와 방어 관점 회고 | [labs/03-vulnhub-ctf.md](labs/03-vulnhub-ctf.md) |
 | 시스템 워게임 | BOF·포맷스트링·권한·파일 보안 | [labs/04-system-wargame.md](labs/04-system-wargame.md) |
 | 웹 보안 | DVWA·bWAPP/BeeBox·WebGoat·WAF 등 | [labs/05-web-security.md](labs/05-web-security.md) |
@@ -50,7 +52,7 @@ flowchart LR
 
 - 네트워크: IPv4·서브넷, VLAN, 정적/동적 라우팅, OSPF, ACL, NAT, VPN/IPsec, Packet Tracer, GNS3
 - 서버: Linux, DNS, Web, DB, FTP, MariaDB 복제, rsyslog, Docker
-- 보안 인프라: pfSense, ASAv, ModSecurity, Snort, Suricata, OSSEC, Wazuh
+- 보안 인프라: pfSense, ASAv, nftables/NFQUEUE, HAProxy, ModSecurity, Snort, Suricata, OSSEC, Wazuh
 - 관제·가시성: LogAnalyzer, Zabbix, Graylog, Splunk, Nagios, GoAccess
 - 보안 검증: Nmap, Dirb/ffuf, Burp Suite, VulnHub, WebGoat, OWASP Juice Shop
 - 분석 기초: BOF·포맷스트링 취약 코드, Linux 권한 상승 원인, FlareVM, PE·DLL·VA/RVA 개념
