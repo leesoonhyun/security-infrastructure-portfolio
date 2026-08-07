@@ -6,6 +6,7 @@
 - 형태: 4인 팀 종합 프로젝트
 - 대상: 교육용 웹 서비스 EstMall
 - 목표: 방화벽·IDS/IPS·WAF·관제를 연결하고, 허가된 시험 공격의 응답과 로그를 함께 검증
+- 프로젝트 범위: Firewall·IDS/IPS·WAF·Wazuh 관제, ML 기반 이상탐지, CoreWatch-Atlas 시스템 성능 관제, FLARE-VM 기반 악성코드 분석·IOC 도출
 - 개인 책임: Firewall·IDS/IPS 설계, 접근통제·탐지 규칙 적용, 재검증·문서화
 
 ![TENsion·EstMall 비식별화 방어 흐름](../assets/tension-estmall-defense-flow-public.svg)
@@ -21,7 +22,9 @@
 5. HTTP 응답과 Snort·WAF·Wazuh 로그를 시간순으로 비교했습니다.
 6. 정책 변경 후 같은 시험을 반복해 차단 결과와 정상 서비스 상태를 다시 확인했습니다.
 
-팀 전체는 Web/WAF, Security Gateway, MariaDB·백업 복구 검증 환경과 보조 관제·분석 환경을 구성했습니다. 이 문서에서는 그중 제가 직접 맡거나 작성에 참여한 범위를 분리해 기록합니다.
+팀 전체는 Web/WAF, Security Gateway, MariaDB·백업 복구 검증, Wazuh 관제, ML 기반 이상탐지, CoreWatch-Atlas 시스템 성능 관제, FLARE-VM 기반 악성코드 분석·IOC 도출까지 포함한 침해대응 구성을 완성했습니다. 이 문서에서는 그중 제가 직접 맡거나 작성에 참여한 범위를 분리해 기록합니다.
+
+악성코드 분석은 격리된 교육 환경에서 FLARE-VM·PEStudio·Ghidra·Procmon을 사용해 정적·동적 분석 관점을 익히고, 관찰 결과를 IOC 후보와 관제 확인 항목으로 연결한 팀 프로젝트 범위입니다. 구체적인 샘플·해시·실행 정보는 제외한 [학습 노트](../labs/07-malware-analysis-basics.md)로 공개했습니다.
 
 ## 개인 기여
 
@@ -33,7 +36,7 @@
 - 보안 서비스·업로드 파일·DB 백업 상태를 점검하는 셸 스크립트 작성·연동 참여
 - 방화벽·IDS/IPS·자동화 결과를 개인 기여내용과 팀 최종보고서에 문서화
 
-Wazuh·GoAccess·ML 수치와 전체 서비스 구축은 팀 결과이며 개인 단독 성과로 표현하지 않습니다.
+Wazuh·GoAccess·ML·CoreWatch-Atlas 관제와 FLARE-VM 분석·IOC 도출, 전체 서비스 구축은 팀 결과이며 개인 단독 성과로 표현하지 않습니다.
 
 ## 운영 자동화
 
