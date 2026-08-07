@@ -1,78 +1,151 @@
+<div align="center">
+
 # 이순현 | 보안 인프라 포트폴리오
 
-> 네트워크·서버를 구축하고, 허가된 교육용 환경에서 공격을 재현해 로그와 방어정책으로 검증합니다.
+**네트워크·서버를 구축하고, 허가된 교육용 환경에서 공격을 재현해 로그와 방어정책으로 검증합니다.**
 
-보안 인프라 운영과 보안관제(SOC) 직무를 준비하고 있습니다. 이 저장소는 이스트소프트 주관 K-디지털 트레이닝 과정에서 수행한 네트워크·서버 구축, 방화벽·IDS·SIEM 운영, CTF·웹 보안, 악성코드 분석 기초 학습을 **공개 가능한 범위로 다시 작성한 포트폴리오**입니다.
+보안 인프라 운영 · 보안관제/SOC · 네트워크·시스템 운영
 
-![학습 로드맵](assets/learning-map.svg)
+<p>
+  <img alt="Training 736 hours" src="https://img.shields.io/badge/Training-736_hours-1E3A5F?style=for-the-badge">
+  <img alt="Three team projects" src="https://img.shields.io/badge/Team_Projects-3-1677A6?style=for-the-badge">
+  <img alt="Team wargame third place" src="https://img.shields.io/badge/Team_Wargame-3rd-D97706?style=for-the-badge">
+  <img alt="Security infrastructure and SOC focus" src="https://img.shields.io/badge/Focus-Security_Infra_%26_SOC-2B8A7E?style=for-the-badge">
+</p>
 
-## 한눈에 보기
+[Notion 포트폴리오](https://legendary-zenith-e52.notion.site/3a464fddf16c818cb2aeda73c60e1645) · [프로필](PROFILE.md) · [기술·증거](SKILLS_EVIDENCE.md) · [전체 교육과정](CURRICULUM.md) · [AI 활용 방식](AI_WORKFLOW.md)
 
-- 교육: `[이스트캠프] 가디언즈 정보보호 및 보안 인프라 운영 관리`, 2026.03.24 - 2026.08.07, 총 736시간 과정 이수 중
-- 팀 프로젝트 3회: 인프라 통합 구축 1회, 보안 인프라 구축·공격 검증 1회, 웹 서비스 방어체계 구축·재검증 1회
-- 팀 워게임: 3단원 팀 워게임 3위(팀 성과)
-- CTF·취약 환경: VulnHub와 교육용 워게임 10개 이상 실습. 5개는 로컬 근거 확인, DoubleTrouble·Momentum·Potato·Venus 등은 증거 보완 상태를 표시해 문서화
-- 웹 보안: OWASP Juice Shop 17개 도전 과제 해결, 39쪽 개인 실습 보고서 작성
-- AI 활용: Codex·Gemini로 자료 구조화·보고서·영상·편집을 보조하고, 원본 대조·실행 검증·비식별화 후 GitHub·Notion·PPT로 정리
-- 목표 직무: 보안 인프라 운영, 보안관제/SOC, 네트워크·시스템 운영
+</div>
 
-## 포트폴리오 구성
+---
 
-| 구분 | 내용 | 바로가기 |
+## 핵심 요약
+
+<table>
+  <tr>
+    <td align="center" width="20%"><strong>736시간</strong><br><sub>보안 인프라 교육</sub></td>
+    <td align="center" width="20%"><strong>팀 프로젝트 3회</strong><br><sub>구축·운영·공격 검증</sub></td>
+    <td align="center" width="20%"><strong>CTF 10개 이상</strong><br><sub>공개 근거 5건 연결</sub></td>
+    <td align="center" width="20%"><strong>Juice Shop 17개</strong><br><sub>개인 보고서 39쪽</sub></td>
+    <td align="center" width="20%"><strong>팀 워게임 3위</strong><br><sub>별도 팀 성과</sub></td>
+  </tr>
+</table>
+
+> 이 저장소는 이스트소프트 주관 K-디지털 트레이닝에서 수행한 학습과 프로젝트를 공개 가능한 범위로 다시 작성한 포트폴리오입니다. 기술은 `학습`·`실습`·`프로젝트` 수준을 구분하며 상용 운영 경력으로 표현하지 않습니다.
+
+## 대표 프로젝트
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="projects/01-simmitpay-central-logging.md"><img src="assets/simmitpay-architecture.svg" alt="SimmitPay 중앙 로그 수집 구성도"></a>
+      <h3>01 · SimmitPay</h3>
+      <strong>중앙 로그 수집 인프라</strong><br><br>
+      <b>개인 역할</b><br>
+      서버 상세 설계, DNS·로그 서버, 보고서 초안<br><br>
+      <b>검증 결과</b><br>
+      rsyslog → MariaDB → LogAnalyzer 수집·조회 흐름 확인<br><br>
+      <a href="projects/01-simmitpay-central-logging.md"><b>프로젝트 보기 →</b></a>
+    </td>
+    <td width="33%" valign="top">
+      <a href="projects/02-bossam-security-infrastructure.md"><img src="assets/bossam-defense-flow.svg" alt="Bossam Games 보안 인프라 방어 흐름"></a>
+      <h3>02 · Bossam Games</h3>
+      <strong>보안 인프라와 공격 검증</strong><br><br>
+      <b>개인 역할</b><br>
+      pfSense·Wazuh·IDS 환경 구축, 결과 문서화<br><br>
+      <b>검증 결과</b><br>
+      공격 경로를 방화벽·로그·최소 권한 개선안으로 연결<br><br>
+      <a href="projects/02-bossam-security-infrastructure.md"><b>프로젝트 보기 →</b></a>
+    </td>
+    <td width="34%" valign="top">
+      <a href="projects/03-tension-estmall-security-project.md"><img src="assets/tension-estmall-defense-flow-public.svg" alt="TENsion EstMall 방어 검증 흐름"></a>
+      <h3>03 · TENsion · EstMall</h3>
+      <strong>보안 인프라 공격·방어 검증</strong><br><br>
+      <b>개인 역할</b><br>
+      Firewall·IDS/IPS 설계, nftables·Snort 2/NFQUEUE, 재검증<br><br>
+      <b>검증 결과</b><br>
+      웹 공격 4종 차단과 Snort·WAF·Wazuh 로그 교차 확인<br><br>
+      <a href="projects/03-tension-estmall-security-project.md"><b>프로젝트 보기 →</b></a>
+    </td>
+  </tr>
+</table>
+
+## 대표 검증 사례
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>VulnHub · CTF</h3>
+      <p><b>10개 이상 실습 · 공개 근거 5건</b></p>
+      <p>Mercury·Ripper·Breakout·Earth·Lupin의 정찰, 초기 침투, 계정 전환과 권한 상승 흐름을 방어 관점으로 다시 정리했습니다.</p>
+      <a href="labs/03-vulnhub-ctf.md">학습 현황</a> · <a href="writeups/vulnhub-documented-writeups.md">상세 풀이</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>OWASP Juice Shop</h3>
+      <p><b>17개 도전 과제 · 개인 보고서 39쪽</b></p>
+      <p>SQL Injection, 경로 검증, 약한 인증 사례를 요청·응답, 원인, 대응 방안과 재검증 순서로 기록했습니다.</p>
+      <a href="labs/06-juice-shop-case-study.md">개인 사례 보기</a>
+    </td>
+  </tr>
+</table>
+
+## 역량과 공개 근거
+
+| 역량 | 수행 내용 | 대표 근거 |
 |---|---|---|
-| 프로필 | 비전공 전환 배경과 현장 경험의 연결 | [PROFILE.md](PROFILE.md) |
-| 전체 과정 | 인프라 구축부터 공격 검증·악성코드 기초까지 | [CURRICULUM.md](CURRICULUM.md) |
-| 기술 증거 | 기술별 사용 맥락·행동·검증 방법·수준 | [SKILLS_EVIDENCE.md](SKILLS_EVIDENCE.md) |
-| AI 활용 | AI 보조 작업과 사람 검증·공개 절차 | [AI_WORKFLOW.md](AI_WORKFLOW.md) |
-| 인프라 기초 | 네트워크·Linux·서버 구축과 기본 점검 절차 | [labs/01-network-linux-foundation.md](labs/01-network-linux-foundation.md) |
-| 보안 운영 | 방화벽·IDS·Wazuh·모니터링·로그 가시성 | [labs/02-security-operations.md](labs/02-security-operations.md) |
-| 프로젝트 1 | SimmitPay 중앙 로그 수집 인프라 | [projects/01-simmitpay-central-logging.md](projects/01-simmitpay-central-logging.md) |
-| 프로젝트 2 | Bossam Games 보안 인프라와 공격 검증 | [projects/02-bossam-security-infrastructure.md](projects/02-bossam-security-infrastructure.md) |
-| 프로젝트 3 | TENsion·EstMall 보안 인프라 구축과 공격·방어 검증 | [projects/03-tension-estmall-security-project.md](projects/03-tension-estmall-security-project.md) |
-| CTF | VulnHub 사례와 방어 관점 회고 | [labs/03-vulnhub-ctf.md](labs/03-vulnhub-ctf.md) |
-| 시스템 워게임 | BOF·포맷스트링·권한·파일 보안 | [labs/04-system-wargame.md](labs/04-system-wargame.md) |
-| 웹 보안 | DVWA·bWAPP/BeeBox·WebGoat·WAF 등 | [labs/05-web-security.md](labs/05-web-security.md) |
-| 개인 사례 | Juice Shop 17개 과제 분석 | [labs/06-juice-shop-case-study.md](labs/06-juice-shop-case-study.md) |
-| 악성코드 기초 | FlareVM·PE 구조·분석 절차 | [labs/07-malware-analysis-basics.md](labs/07-malware-analysis-basics.md) |
-| 워게임 목록 | Bee-box·Account·Cookie·WebGoat·DVWA 등 | [labs/08-wargame-catalog.md](labs/08-wargame-catalog.md) |
+| 네트워크·서버 구축 | VLAN·라우팅·ACL·NAT, Linux DNS·Web·DB·로그 서버 | [SimmitPay](projects/01-simmitpay-central-logging.md) |
+| 보안 인프라 운영 | pfSense·nftables, Snort·Suricata, Wazuh, 로그 가시화 | [Bossam Games](projects/02-bossam-security-infrastructure.md) · [TENsion](projects/03-tension-estmall-security-project.md) |
+| 공격 검증 | VulnHub, 시스템·웹 워게임, Juice Shop | [VulnHub](labs/03-vulnhub-ctf.md) · [Juice Shop](labs/06-juice-shop-case-study.md) |
+| 문제 해결·문서화 | 현상 재현 → 범위 축소 → 변경 → 재검증 → 근거 기록 | [기술·증거 매트릭스](SKILLS_EVIDENCE.md) |
+| AI 활용 | 초안·구조화 보조 후 원본·실행 결과·로그로 직접 검증 | [AI 활용 및 검증 워크플로](AI_WORKFLOW.md) |
 
-## 학습을 연결한 방식
+<details>
+<summary><b>전체 학습 아카이브 펼치기</b></summary>
+
+### 인프라와 보안 운영
+
+| 구분 | 내용 | 문서 |
+|---|---|---|
+| 인프라 기초 | 네트워크·Linux·서버 구축과 기본 점검 | [학습 노트](labs/01-network-linux-foundation.md) |
+| 보안 운영 | 방화벽·IDS·Wazuh·모니터링·로그 가시성 | [학습 노트](labs/02-security-operations.md) |
+| 전체 과정 | 인프라 구축부터 분석 입문까지의 학습 범위 | [교육과정](CURRICULUM.md) |
+
+### 공격 검증과 분석 입문
+
+| 구분 | 내용 | 문서 |
+|---|---|---|
+| 시스템 워게임 | BOF·Format String·권한·파일 보안 | [학습 노트](labs/04-system-wargame.md) |
+| 웹 보안 | DVWA·bWAPP/BeeBox·WebGoat·WAF | [학습 노트](labs/05-web-security.md) |
+| 워게임 환경 | Account·Cookie 등 교육용 환경 목록 | [카탈로그](labs/08-wargame-catalog.md) |
+| 악성코드 분석 기초 | FLARE-VM·PE 구조·정적/동적 분석 절차 | [입문 노트](labs/07-malware-analysis-basics.md) |
+
+</details>
+
+## 작업 방식
 
 ```mermaid
 flowchart LR
-    A[네트워크·서버 구축] --> B[방화벽·접근통제]
-    B --> C[IDS·SIEM·로그 수집]
-    C --> D[CTF·웹 취약점 재현]
-    D --> E[탐지 로그 확인]
-    E --> F[차단·완화책 제안]
+    A[구축] --> B[접근 통제]
+    B --> C[로그 수집·탐지]
+    C --> D[허가된 공격 재현]
+    D --> E[차단·로그 확인]
+    E --> F[개선·재검증]
     F --> C
 ```
 
-공격 실습의 목적은 기술을 과시하는 데 있지 않습니다. 서비스가 어떤 조건에서 무너지는지 확인하고, 방화벽·WAF·IDS·SIEM·계정 및 권한 정책으로 어떻게 줄일 수 있는지 연결하는 데 중점을 두었습니다.
-
-## 기술 범위
-
-- 네트워크: IPv4·서브넷, VLAN, 정적/동적 라우팅, OSPF, ACL, NAT, VPN/IPsec, Packet Tracer, GNS3
-- 서버: Linux, DNS, Web, DB, FTP, MariaDB 복제, rsyslog, Docker
-- 보안 인프라: pfSense, ASAv, nftables/NFQUEUE, HAProxy, ModSecurity, Snort, Suricata, OSSEC, Wazuh
-- 관제·가시성: LogAnalyzer, Zabbix, Graylog, Splunk, Nagios, GoAccess
-- 보안 검증: Nmap, Dirb/ffuf, Burp Suite, VulnHub, WebGoat, OWASP Juice Shop
-- 분석 기초: BOF·포맷스트링 취약 코드, Linux 권한 상승 원인, FlareVM, PE·DLL·VA/RVA 개념
-
-모든 기술은 `학습`, `실습`, `프로젝트` 수준으로 구분해 표기하며, 상용 환경 운영 경력으로 표현하지 않습니다.
-
-## AI 활용 방식
-
-- Codex·Gemini에 목표·조건·출력 형식을 설명하고, 학습자료·오류·로그·보고서 초안을 구조화합니다.
-- 답변을 그대로 사용하지 않고 원본 자료, 직접 실행 결과와 로그를 대조해 누락·과장·분류 오류를 수정합니다.
-- 교육 중 처음 도입한 GitHub·Notion을 학습자료·프로젝트 관리와 공개 포트폴리오 운영에 연결했습니다.
-- 구체적인 사례와 검증 절차는 [AI 활용 및 검증 워크플로](AI_WORKFLOW.md)에 정리했습니다.
+공격 실습은 기술 과시보다 서비스가 무너지는 조건을 확인하고, 방화벽·WAF·IDS·SIEM·계정 및 권한 정책으로 위험을 어떻게 줄일지 연결하는 데 목적을 두었습니다. AI는 질문·구조화·초안·검토에 사용하며 최종 사실, 실행 결과, 보안과 공개 판단은 직접 확인합니다.
 
 ## 공개 원칙
 
-이 저장소의 모든 보안 실습은 본인 또는 교육기관이 허가한 로컬·격리 환경에서 수행했습니다. 공개 VulnHub와 소유·허가된 CTF의 풀이·명령·flag는 스포일러 표시 후 공개할 수 있습니다. 실제 사이트의 세션·토큰, 개인 비밀번호, 가상머신, 강의 원본과 팀 공동저작물은 공개하지 않습니다. 상세 기준은 [공개·비식별화 정책](governance/PUBLICATION_POLICY.md)을 따릅니다.
+- 본인 또는 교육기관이 허가한 로컬·격리 환경에서만 보안 실습을 수행했습니다.
+- 실제 세션·토큰·비밀번호·내부 주소와 원본 ISO·OVA는 공개하지 않습니다.
+- 팀 성과와 개인 기여를 분리하고, 근거가 부족한 항목은 보완 상태로 표시합니다.
+- 상세 기준: [공개·비식별화 정책](governance/PUBLICATION_POLICY.md)
 
-## 연락처
+---
 
-- Email: 2501lsh@naver.com
-- GitHub: `github.com/leesoonhyun`
+<div align="center">
+
+**이순현** · [2501lsh@naver.com](mailto:2501lsh@naver.com) · [GitHub](https://github.com/leesoonhyun) · [Notion](https://legendary-zenith-e52.notion.site/3a464fddf16c818cb2aeda73c60e1645)
+
+</div>
