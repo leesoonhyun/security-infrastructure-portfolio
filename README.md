@@ -13,7 +13,7 @@
   <img alt="Security infrastructure and SOC focus" src="https://img.shields.io/badge/Focus-Security_Infra_%26_SOC-2B8A7E?style=for-the-badge">
 </p>
 
-[Notion 포트폴리오](https://legendary-zenith-e52.notion.site/3a464fddf16c818cb2aeda73c60e1645) · [프로필](PROFILE.md) · [기술·증거](SKILLS_EVIDENCE.md) · [전체 교육과정](CURRICULUM.md) · [AI 활용 방식](AI_WORKFLOW.md)
+[Notion 포트폴리오](https://legendary-zenith-e52.notion.site/3a464fddf16c818cb2aeda73c60e1645) · [프로필](PROFILE.md) · [기술·증거](SKILLS_EVIDENCE.md) · [전체 교육과정](CURRICULUM.md) · [악성코드 분석 노트](labs/07-malware-analysis-basics.md) · [AI 활용 방식](AI_WORKFLOW.md)
 
 </div>
 
@@ -61,6 +61,9 @@
       <a href="projects/03-tension-estmall-security-project.md"><img src="assets/tension-estmall-defense-flow-public.svg" alt="TENsion EstMall 방어 검증 흐름"></a>
       <h3>03 · TENsion · EstMall</h3>
       <strong>보안 인프라 공격·방어 검증</strong><br><br>
+      <b>프로젝트 범위</b><br>
+      Firewall·IDS/IPS·WAF·Wazuh 관제<br>
+      ML 기반 이상탐지·CoreWatch-Atlas 시스템 성능 관제·FLARE-VM 기반 악성코드 분석·IOC 도출<br><br>
       <b>개인 역할</b><br>
       Firewall·IDS/IPS 설계, nftables·Snort 2/NFQUEUE, 재검증<br><br>
       <b>검증 결과</b><br>
@@ -69,6 +72,29 @@
     </td>
   </tr>
 </table>
+
+## 악성코드 분석 학습
+
+> 실제 유포 사례를 바탕으로 한 교육 분석에서, 격리 환경의 정적·동적 분석 결과를 IOC 후보와 방어 관제 관점으로 연결하는 과정을 익혔습니다. 공개 문서에는 분석 절차와 방어 관점만 기록합니다.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>격리 분석 환경</h3>
+      <p>FLARE-VM, Snapshot, 네트워크 분리를 기준으로 분석 환경을 준비했습니다.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>정적·동적 분석</h3>
+      <p>PEStudio·Ghidra로 PE 구조를 살피고, Procmon으로 프로세스·파일·레지스트리 변화를 관찰했습니다.</p>
+    </td>
+    <td width="34%" valign="top">
+      <h3>IOC·방어 연계</h3>
+      <p>관찰 내용을 IOC 후보로 정리해 관제 확인 항목과 대응 우선순위 검토에 연결했습니다.</p>
+    </td>
+  </tr>
+</table>
+
+[악성코드 분석 학습 노트 보기 →](labs/07-malware-analysis-basics.md)
 
 ## 대표 검증 사례
 

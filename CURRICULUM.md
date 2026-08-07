@@ -16,8 +16,8 @@
 | 2단원 전반 | 보안 인프라 운영 | GNS3 보안망, ASAv·pfSense, Zabbix, OSSEC, Snort·Suricata, Wazuh | 보안 인프라 실습 과제 2 - 4 |
 | 2단원 후반 | 모의해킹·CTF·시스템 워게임 | VulnHub, 정보 수집, 취약 서비스 분석, Linux 권한 상승 원인, BOF·포맷스트링 | CTF 메모와 해결 화면, Bossam 프로젝트 |
 | 3단원 | 웹 보안·워게임 | DVWA, bWAPP/BeeBox, WebGoat, Juice Shop, webhacking.kr, Suninatas, ModSecurity WAF | Juice Shop 39쪽 개인 보고서, WebGoat·WAF 실습 메모 |
-| 3단원 후반 | 악성코드 분석 입문 | FlareVM 구성, PE·DLL·Offset·VA/RVA, 정적·동적 분석 절차 | 악성코드 분석 학습 메모 |
-| 3단원 18 - 20주차 | 팀 워게임·종합 보안 프로젝트 | 팀 워게임 VM, EstMall 방화벽·IDS/IPS 경로, 공격 탐지 규칙, 재검증·문서화 | 팀 워게임 3위, TENsion 최종보고서·개인 기여내용·보안 시연 |
+| 3단원 후반 | 악성코드 분석 입문 | FLARE-VM 구성, PEStudio·Ghidra·Procmon 활용, PE·DLL·Offset·VA/RVA, 정적·동적 분석과 IOC·방어 연계 절차 | [악성코드 분석 학습 노트](labs/07-malware-analysis-basics.md) |
+| 3단원 18 - 20주차 | 팀 워게임·종합 보안 프로젝트 | 팀 워게임 VM, EstMall 방화벽·IDS/IPS·WAF·Wazuh 관제, ML 기반 이상탐지, CoreWatch-Atlas 시스템 성능 관제, FLARE-VM 기반 악성코드 분석·IOC 도출, 공격 재검증·문서화 | 팀 워게임 3위, TENsion 최종보고서·개인 기여내용·보안 시연 |
 
 ## Track A. Infrastructure Build
 
@@ -52,7 +52,14 @@
 - BOF·포맷스트링 취약 C 코드를 통해 입력 길이 검증과 안전한 출력 함수의 필요성 확인
 - DVWA·bWAPP/BeeBox·WebGoat·Juice Shop 등에서 입력 검증·인증·접근통제·세션·설정 오류 학습
 - Burp Suite로 요청과 응답을 관찰하고, 취약점의 원인과 완화책 정리
-- EstMall 팀 프로젝트에서 허가된 시험 요청의 방화벽·IDS/IPS·WAF 처리 결과와 로그를 비교
+- EstMall 팀 프로젝트에서 허가된 시험 요청의 방화벽·IDS/IPS·WAF·Wazuh 처리 결과를 비교하고, ML 이상탐지·CoreWatch-Atlas 성능관제·FLARE-VM 기반 악성코드 분석·IOC 도출 결과를 함께 확인
+
+### Malware Analysis
+
+- FLARE-VM과 Snapshot·격리 네트워크를 기준으로 교육용 분석 환경 준비
+- PEStudio·Ghidra로 PE 헤더·섹션·Import·문자열과 코드 구조를 살피는 정적 분석 관점 학습
+- Procmon으로 프로세스·파일·레지스트리 변화와 행위 흔적을 관찰하는 동적 분석 절차 학습
+- 관찰 내용을 IOC 후보로 정리하고 보안관제 확인 항목과 대응 우선순위에 연결
 
 ## Track D. Defense Mapping
 
