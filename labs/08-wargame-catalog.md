@@ -1,5 +1,7 @@
 # Lab 08. Wargame Environment Catalog
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 2026년 8월 5일 기준 보관·수업 실습이 확인된 웹 해킹 ISO/환경 목록입니다. 파일 자체는 공개하지 않고 각 환경의 학습 노트만 연결합니다.
 
 | 환경 | 형식·버전 | 현재 상태 | 노트에 남길 주제 | 공개 상태 |

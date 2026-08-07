@@ -4,22 +4,22 @@
 
 | 기술·주제 | 사용 맥락 | 내가 한 행동 | 확인 방법 | 수준 |
 |---|---|---|---|---|
-| IPv4·서브넷·라우팅 | 1단원 네트워크 구축 | 주소 계획, 정적 경로·OSPF 구성, 구간 간 통신 확인 | ping, traceroute, 라우팅 테이블 | 실습·프로젝트 |
-| ACL·NAT·VPN/IPsec | 구간 접근 통제 | 허용·차단 조건과 주소 변환 구성 | 정책 전후 연결성 비교 | 실습·프로젝트 |
-| Linux 서버 | DNS/Web/DB/FTP | 서비스 설치·설정, 계정·권한·상태 확인 | systemctl, 포트, 서비스 요청 | 실습·프로젝트 |
+| IPv4·서브넷·라우팅 | 1단원 네트워크 구축 | 주소 계획, 정적 경로·OSPF 구성, 구간 간 통신 확인 | [Lab 01](labs/01-network-linux-foundation.md) · ping·traceroute·라우팅 테이블 | 실습·프로젝트 |
+| ACL·NAT·VPN/IPsec | 구간 접근 통제 | 허용·차단 조건과 주소 변환 구성 | [Lab 01](labs/01-network-linux-foundation.md) · 정책 전후 연결성 비교 | 실습·프로젝트 |
+| Linux 서버 | DNS/Web/DB/FTP | 서비스 설치·설정, 계정·권한·상태 확인 | [Lab 01](labs/01-network-linux-foundation.md) · systemctl·포트·서비스 요청 | 실습·프로젝트 |
 | MariaDB 복제 | 서버 이중화 실습 | Primary/Replica 구성과 데이터 반영 확인 | 데이터 생성 후 복제 결과 비교 | 실습 |
 | rsyslog·LogAnalyzer | SimmitPay 중앙 로그 | DNS·로그 서버 구성, 로그 전송·DB 적재·조회 연결 | 송신 이벤트와 대시보드 레코드 비교 | 프로젝트 |
-| pfSense·ASAv | 보안 구간 분리 | 인터페이스·방화벽 규칙·NAT 설계 | 허용/차단 테스트와 로그 비교 | 실습·프로젝트 |
-| Snort·Suricata | IDS/IPS 실습 | 서비스 구성, 시험 트래픽 후 경보 확인 | alert·eve 로그 확인 | 실습·프로젝트 |
-| nftables·NFQUEUE | TENsion 방화벽·인라인 검사 경로 | 허용·차단 정책과 Snort2 전달 경로 설계에 참여 | 경로 변경 전후 연결·큐·경보 결과 재검증 | 프로젝트 |
-| Snort2 탐지 규칙 | TENsion IDS/IPS | 허가된 시험 트래픽용 탐지 규칙 작성에 참여 | 반복 시험 후 경보·차단·오탐 결과 비교 | 프로젝트 |
-| OSSEC·Wazuh | 호스트 이벤트 수집 | Agent 연결과 경보 대시보드 확인 | 등록 상태·이벤트 생성 비교 | 실습·프로젝트 |
-| Zabbix·Graylog·Splunk | 모니터링·로그 분석 | Agent/수집 환경 구성과 검색·시각화 | 상태·검색 결과·대시보드 확인 | 실습 |
-| Nmap·Dirb·ffuf | 허가된 CTF 자산 탐색 | 호스트·포트·경로 열거 | 여러 도구 결과 교차 확인 | 실습 |
+| pfSense·ASAv | 보안 구간 분리 | 인터페이스·방화벽 규칙·NAT 설계 | [Lab 02](labs/02-security-operations.md) · 허용/차단 테스트와 로그 비교 | 실습·프로젝트 |
+| Snort·Suricata | IDS/IPS 실습 | 서비스 구성, 시험 트래픽 후 경보 확인 | [Lab 02](labs/02-security-operations.md) · alert·eve 로그 확인 | 실습·프로젝트 |
+| nftables·NFQUEUE | TENsion 방화벽·인라인 검사 경로 | 허용·차단 정책과 Snort 2 전달 경로 설계에 참여 | 경로 변경 전후 연결·큐·경보 결과 재검증 | 프로젝트 |
+| Snort 2 탐지 규칙 | TENsion IDS/IPS | 허가된 시험 트래픽용 탐지 규칙 작성에 참여 | 반복 시험 후 경보·차단·오탐 결과 비교 | 프로젝트 |
+| OSSEC·Wazuh | 호스트 이벤트 수집 | Agent 연결과 경보 대시보드 확인 | [Lab 02](labs/02-security-operations.md) · 등록 상태·이벤트 생성 비교 | 실습·프로젝트 |
+| Zabbix·Graylog·Splunk | 모니터링·로그 분석 | Agent/수집 환경 구성과 검색·시각화 | [Lab 02](labs/02-security-operations.md) · 상태·검색 결과·대시보드 확인 | 실습 |
+| Nmap·Dirb·ffuf | 허가된 CTF 자산 탐색 | 호스트·포트·경로 열거 | [Lab 03](labs/03-vulnhub-ctf.md) · 여러 도구 결과 교차 확인 | 실습 |
 | Burp Suite | 취약 웹 요청 분석 | Proxy·Repeater 중심으로 요청/응답 비교 | 변조 전후 응답·로그 비교 | 실습 |
-| SQLi·XSS·접근통제 | Juice Shop·WebGoat 등 | 취약점 재현, 원인과 완화책 문서화 | 과제 완료와 39쪽 개인 보고서 | 실습 |
-| BOF·포맷스트링 | 시스템 워게임 | 취약 C 코드 구조와 변수·메모리 영향 확인 | 정상/비정상 입력 결과 비교 | 학습·실습 |
-| ModSecurity WAF | 웹 공격 보조 통제 | 모듈 활성화, 차단 규칙과 감사 로그 확인 | 403 응답·audit log 비교 | 실습 |
+| SQLi·XSS·접근통제 | Juice Shop·WebGoat 등 | 취약점 재현, 원인과 완화책 문서화 | [Lab 05](labs/05-web-security.md) · [Lab 06](labs/06-juice-shop-case-study.md) · 39쪽 개인 보고서 | 실습 |
+| BOF·포맷스트링 | 시스템 워게임 | 취약 C 코드 구조와 변수·메모리 영향 확인 | [Lab 04](labs/04-system-wargame.md) · 정상/비정상 입력 결과 비교 | 학습·실습 |
+| ModSecurity WAF | 웹 공격 보조 통제 | 모듈 활성화, 차단 규칙과 감사 로그 확인 | [Lab 05](labs/05-web-security.md) · 403 응답·audit log 비교 | 실습 |
 | 셸 스크립트 | TENsion 보안 점검·운영 보조 | 반복 점검과 결과 수집용 스크립트 작성에 참여 | 수동 점검 결과와 스크립트 출력 비교 | 프로젝트 |
 | FLARE-VM·PEStudio·Ghidra·Procmon | 악성코드 분석 입문 | 격리 분석 VM 구성, PE 구조 정적 분석·행위 기반 동적 분석 절차 학습, IOC 후보와 방어 관제 관점 연결 | [악성코드 분석 학습 노트](labs/07-malware-analysis-basics.md) | 학습 |
 | 문서화·협업 | 팀 프로젝트 3회 | 역할 범위 기록, 재검증 결과 정리, 보고서·발표 자료 작성 참여 | 팀 산출물과 개인 기여내용 문서 | 프로젝트 |

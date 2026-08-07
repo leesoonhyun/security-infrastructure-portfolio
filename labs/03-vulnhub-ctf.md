@@ -1,5 +1,7 @@
 # Lab 03. VulnHub CTF Learning Log
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 > **Spoiler notice**: 이 문서와 연결된 풀이에는 VulnHub의 의도적으로 취약한 오프라인 VM 해결 과정이 포함됩니다. 모든 대상은 격리된 Host-only/NAT 실습망에서 실행했습니다.
 
 ## 왜 CTF를 했는가
@@ -87,4 +89,3 @@ CTF 풀이를 단순한 root 획득으로 끝내지 않고 `정찰 → 서비스
 [로그] 웹·인증·시스템·IDS 이벤트
 [개선] 원인, 예방 통제, 탐지 통제, 재검증
 ```
-
