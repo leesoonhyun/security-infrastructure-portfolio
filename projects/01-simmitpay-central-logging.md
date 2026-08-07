@@ -1,5 +1,7 @@
 # Project 01. SimmitPay 중앙 로그 수집 인프라
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 ## 프로젝트 개요
 
 - 형태: 4인 팀 프로젝트
@@ -69,3 +71,4 @@ Client/Server event
 
 팀 보고서 원본과 실제 주소·계정은 공개하지 않았습니다. 구성도는 역할과 흐름만 남겨 새로 작성했습니다.
 
+**관련 학습:** [네트워크·Linux 기초](../labs/01-network-linux-foundation.md)

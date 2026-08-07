@@ -1,5 +1,7 @@
 # Project 02. Bossam Games 보안 인프라와 공격 검증
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 ## 프로젝트 개요
 
 - 형태: 5인 팀 프로젝트
@@ -72,3 +74,4 @@
 
 원본 보고서·워크스루·VM에는 팀원 정보, 내부 주소, 계정, 비밀번호와 실행 가능한 공격 코드가 포함될 수 있어 업로드하지 않았습니다. 이 문서는 개인 역할과 팀 결과를 구분해 다시 작성한 공개본입니다.
 
+**관련 학습:** [보안 운영](../labs/02-security-operations.md) · [VulnHub CTF](../labs/03-vulnhub-ctf.md) · [웹 보안](../labs/05-web-security.md)

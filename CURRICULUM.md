@@ -6,18 +6,20 @@
 - 운영: 이스트소프트 주관 K-디지털 트레이닝
 - 기간: 2026.03.24 - 2026.08.07
 - 시간: 92일, 총 736시간
-- 상태: 이수 중, 2026년 8월 수료 예정
+- 상태: 이수 완료 (2026.08.07)
 
 ## 과정 전체 흐름
 
+![인프라 보안 학습 로드맵](assets/learning-map.svg)
+
 | 구간 | 핵심 주제 | 직접 수행한 내용 | 대표 증거 |
 |---|---|---|---|
-| 1단원 | 네트워크·Linux·서버 구축 | 서브넷·라우팅·ACL·NAT·VPN, DNS/Web/DB/FTP, DB 복제, 중앙 로그 | 네트워크·서버 단원평가, SimmitPay 프로젝트 |
-| 2단원 전반 | 보안 인프라 운영 | GNS3 보안망, ASAv·pfSense, Zabbix, OSSEC, Snort·Suricata, Wazuh | 보안 인프라 실습 과제 2 - 4 |
-| 2단원 후반 | 모의해킹·CTF·시스템 워게임 | VulnHub, 정보 수집, 취약 서비스 분석, Linux 권한 상승 원인, BOF·포맷스트링 | CTF 메모와 해결 화면, Bossam 프로젝트 |
-| 3단원 | 웹 보안·워게임 | DVWA, bWAPP/BeeBox, WebGoat, Juice Shop, webhacking.kr, Suninatas, ModSecurity WAF | Juice Shop 39쪽 개인 보고서, WebGoat·WAF 실습 메모 |
-| 3단원 후반 | 악성코드 분석 입문 | FLARE-VM 구성, PEStudio·Ghidra·Procmon 활용, PE·DLL·Offset·VA/RVA, 정적·동적 분석과 IOC·방어 연계 절차 | [악성코드 분석 학습 노트](labs/07-malware-analysis-basics.md) |
-| 3단원 18 - 20주차 | 팀 워게임·종합 보안 프로젝트 | 팀 워게임 VM, EstMall 방화벽·IDS/IPS·WAF·Wazuh 관제, ML 기반 이상탐지, CoreWatch-Atlas 시스템 성능 관제, FLARE-VM 기반 악성코드 분석·IOC 도출, 공격 재검증·문서화 | 팀 워게임 3위, TENsion 최종보고서·개인 기여내용·보안 시연 |
+| 1단원 | 네트워크·Linux·서버 구축 | 서브넷·라우팅·ACL·NAT·VPN, DNS/Web/DB/FTP, DB 복제, 중앙 로그 | [네트워크·Linux 기초](labs/01-network-linux-foundation.md) · [SimmitPay](projects/01-simmitpay-central-logging.md) |
+| 2단원 전반 | 보안 인프라 운영 | GNS3 보안망, ASAv·pfSense, Zabbix, OSSEC, Snort·Suricata, Wazuh | [보안 운영](labs/02-security-operations.md) · 보안 인프라 실습 과제 2–4 |
+| 2단원 후반 | 모의해킹·CTF·시스템 워게임 | VulnHub, 정보 수집, 취약 서비스 분석, Linux 권한 상승 원인, BOF·포맷스트링 | [VulnHub CTF](labs/03-vulnhub-ctf.md) · [시스템 워게임](labs/04-system-wargame.md) · [Bossam](projects/02-bossam-security-infrastructure.md) |
+| 3단원 | 웹 보안·워게임 | DVWA, bWAPP/BeeBox, WebGoat, Juice Shop, webhacking.kr, Suninatas, ModSecurity WAF | [웹 보안](labs/05-web-security.md) · [Juice Shop](labs/06-juice-shop-case-study.md) · [워게임 환경](labs/08-wargame-catalog.md) |
+| 3단원 후반 | 악성코드 분석 입문 | FLARE-VM 구성, PEStudio·Ghidra·Procmon 활용, PE·DLL·Offset·VA/RVA, 정적·동적 분석과 IOC·방어 연계 절차 | [악성코드 분석 기초](labs/07-malware-analysis-basics.md) |
+| 3단원 18–20주차 | 팀 워게임·종합 보안 프로젝트 | 팀 워게임 VM, EstMall 방화벽·IDS/IPS·WAF·Wazuh 관제, ML 기반 이상탐지, CoreWatch-Atlas 시스템 성능 관제, FLARE-VM 기반 악성코드 분석·IOC 도출, 공격 재검증·문서화 | 팀 워게임 3위 · [TENsion](projects/03-tension-estmall-security-project.md) · [워게임 환경](labs/08-wargame-catalog.md) |
 
 ## Track A. Infrastructure Build
 
@@ -41,7 +43,7 @@
 
 - pfSense·ASAv를 이용한 구간 분리와 접근 통제
 - Snort·Suricata·OSSEC·Wazuh를 이용한 이벤트 수집과 탐지 확인
-- nftables·NFQUEUE와 Snort2를 연결한 인라인 검사 경로 설계·재검증
+- nftables·NFQUEUE와 Snort 2를 연결한 인라인 검사 경로 설계·재검증
 - Zabbix·Graylog·Splunk·Nagios·GoAccess를 이용한 상태·로그 가시화 실습
 - 정책 변경 전후 패킷 흐름·서비스 접근·경보 생성 비교
 - 주요정보통신기반시설 취약점 점검 기준을 참고한 Linux·서비스 항목 점검

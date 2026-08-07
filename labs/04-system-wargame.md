@@ -1,5 +1,7 @@
 # Lab 04. System Wargame & Secure Coding Basics
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 ## 실습 범위
 
 2단원 후반에는 취약 C 코드와 Linux 시스템 과제를 통해 입력값·메모리·파일·권한 설정이 보안에 미치는 영향을 확인했습니다.
@@ -60,4 +62,3 @@ printf("%s", user_input);
 ## 다음 보완
 
 GDB에서 스택 프레임과 변수 위치를 캡처하고, 취약 버전과 수정 버전의 실행 결과를 한 표로 비교할 예정입니다.
-

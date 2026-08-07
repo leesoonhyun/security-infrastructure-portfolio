@@ -1,5 +1,7 @@
 # Lab 05. Web Security & Wargame
 
+[← 포트폴리오 홈](../README.md) · [전체 교육과정](../CURRICULUM.md) · [기술·증거](../SKILLS_EVIDENCE.md)
+
 > 모든 요청 변조와 취약점 재현은 로컬 VM·교육용 애플리케이션·공개 워게임에서만 수행했습니다.
 
 ## 실습 환경
