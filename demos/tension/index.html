@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TENsion EstMall 팀 프로젝트의 IDS/IPS, nftables, WAF 보안 통제 시연 영상입니다." />
+    <title>TENsion | 보안 통제 시연</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Pretendard, "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: radial-gradient(circle at top, #163050 0, #0d1117 38rem); }
+      a { color: #7dc4ff; }
+      .shell { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 44px 0 64px; }
+      .eyebrow { margin: 0 0 10px; color: #8bcbff; font-size: .8rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(1.85rem, 5vw, 3rem); line-height: 1.2; }
+      .lead { max-width: 48rem; margin: 16px 0 0; color: #b7c4d1; line-height: 1.7; }
+      .notice { margin: 26px 0 32px; padding: 14px 16px; border: 1px solid #2d4b68; border-radius: 12px; background: rgba(22, 48, 80, .48); color: #d6e8f8; font-size: .92rem; line-height: 1.55; }
+      .grid { display: grid; gap: 24px; }
+      .card { overflow: hidden; border: 1px solid #30363d; border-radius: 16px; background: rgba(22, 27, 34, .9); box-shadow: 0 14px 34px rgba(0, 0, 0, .22); scroll-margin-top: 24px; }
+      .card-copy { padding: 20px 22px 4px; }
+      .card h2 { margin: 0; font-size: 1.2rem; }
+      .meta { margin: 8px 0 0; color: #9aa7b3; font-size: .9rem; }
+      video { display: block; width: 100%; margin-top: 16px; background: #000; aspect-ratio: 16 / 9; }
+      .card-footer { display: flex; justify-content: space-between; gap: 16px; padding: 14px 22px 18px; color: #9aa7b3; font-size: .86rem; line-height: 1.5; }
+      .footer { margin-top: 38px; color: #8b949e; font-size: .82rem; line-height: 1.65; }
+      @media (max-width: 560px) { .shell { width: min(100% - 24px, 1100px); padding-top: 30px; } .card-copy { padding: 17px 16px 2px; } .card-footer { padding: 12px 16px 16px; flex-direction: column; gap: 4px; } }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">TENsion · EstMall Security Project</p>
+      <h1>보안 통제 시연 영상</h1>
+      <p class="lead">팀 프로젝트 교육용 격리 환경에서 nftables, IDS/IPS, WAF 정책이 적용된 뒤의 탐지·차단·로그 연계 흐름을 검증한 기록입니다.</p>
+      <p class="notice">모든 영상은 공개용으로 비식별화했습니다. 실제 서비스 주소, 계정 정보, 서버 설정값 및 공격 페이로드는 포함하지 않습니다.</p>
+
+      <section class="grid" aria-label="보안 통제 시연 영상 목록">
+        <article class="card" id="ids-ips">
+          <div class="card-copy">
+            <h2>01 · IDS/IPS 탐지·차단 검증</h2>
+            <p class="meta">nftables → NFQUEUE → Snort 2 경로의 탐지·차단·로그 연계</p>
+          </div>
+          <video controls controlsList="nodownload" preload="metadata" playsinline>
+            <source src="../../assets/demos/tension-estmall/tension-demo-01-ids-ips.mp4" type="video/mp4" />
+            이 브라우저는 HTML5 동영상 재생을 지원하지 않습니다.
+          </video>
+          <div class="card-footer"><span>재생 시간 약 1분 49초</span><span>교육용 격리 환경 검증</span></div>
+        </article>
+
+        <article class="card" id="nftables">
+          <div class="card-copy">
+            <h2>02 · nftables 접근 제어 검증</h2>
+            <p class="meta">서비스별 접근 통제 정책과 직접 접근 제한 결과 확인</p>
+          </div>
+          <video controls controlsList="nodownload" preload="metadata" playsinline>
+            <source src="../../assets/demos/tension-estmall/tension-demo-02-nftables.mp4" type="video/mp4" />
+            이 브라우저는 HTML5 동영상 재생을 지원하지 않습니다.
+          </video>
+          <div class="card-footer"><span>재생 시간 약 46초</span><span>교육용 격리 환경 검증</span></div>
+        </article>
+
+        <article class="card" id="waf">
+          <div class="card-copy">
+            <h2>03 · WAF 차단 정책 검증</h2>
+            <p class="meta">ModSecurity WAF의 차단 응답과 요청 처리 흐름 확인</p>
+          </div>
+          <video controls controlsList="nodownload" preload="metadata" playsinline>
+            <source src="../../assets/demos/tension-estmall/tension-demo-03-waf.mp4" type="video/mp4" />
+            이 브라우저는 HTML5 동영상 재생을 지원하지 않습니다.
+          </video>
+          <div class="card-footer"><span>재생 시간 약 1분 34초</span><span>교육용 격리 환경 검증</span></div>
+        </article>
+      </section>
+
+      <p class="footer">관련 프로젝트 설명과 역할 범위는 <a href="https://github.com/leesoonhyun/security-infrastructure-portfolio/blob/main/projects/03-tension-estmall-security-project.md">TENsion 프로젝트 문서</a>에서 확인할 수 있습니다.</p>
+    </main>
+  </body>
+</html>

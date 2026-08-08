@@ -46,9 +46,9 @@
 
 | 구분 | 시연·검증 내용 | 증적 |
 |---|---|---|
-| IDS/IPS | nftables → NFQUEUE → Snort 2 검사 경로에서 탐지·차단·로그 연결 결과 확인 | [영상 보기](../assets/demos/tension-estmall/tension-demo-01-ids-ips.mp4) · 1분 49초 |
-| nftables | 서비스별 접근통제 정책과 직접 접근 제한 결과 확인 | [영상 보기](../assets/demos/tension-estmall/tension-demo-02-nftables.mp4) · 46초 |
-| WAF | ModSecurity WAF 차단 응답과 요청 처리 흐름 확인 | [영상 보기](../assets/demos/tension-estmall/tension-demo-03-waf.mp4) · 1분 34초 |
+| IDS/IPS | nftables → NFQUEUE → Snort 2 검사 경로에서 탐지·차단·로그 연결 결과 확인 | [영상 재생](https://leesoonhyun.github.io/security-infrastructure-portfolio/demos/tension/#ids-ips) · 1분 49초 |
+| nftables | 서비스별 접근통제 정책과 직접 접근 제한 결과 확인 | [영상 재생](https://leesoonhyun.github.io/security-infrastructure-portfolio/demos/tension/#nftables) · 46초 |
+| WAF | ModSecurity WAF 차단 응답과 요청 처리 흐름 확인 | [영상 재생](https://leesoonhyun.github.io/security-infrastructure-portfolio/demos/tension/#waf) · 1분 34초 |
 
 공개 영상은 교육용 환경의 정책 동작과 검증 결과를 다룹니다. 게시 전 실제 서비스 주소·계정·서버 설정·세부 공격 페이로드가 포함되지 않았는지 확인하고, 필요 시 비식별화합니다.
 
