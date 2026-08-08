@@ -50,7 +50,7 @@
 | nftables | 서비스별 접근통제 정책과 직접 접근 제한 결과 확인 | [영상 보기](../assets/demos/tension-estmall/tension-demo-02-nftables.mp4) · 46초 |
 | WAF | ModSecurity WAF 차단 응답과 요청 처리 흐름 확인 | [영상 보기](../assets/demos/tension-estmall/tension-demo-03-waf.mp4) · 1분 34초 |
 
-영상은 교육용 환경의 정책 동작과 검증 결과만 보여 주며, 실제 서비스 주소·계정·서버 설정·세부 공격 페이로드는 공개하지 않습니다.
+공개 영상은 교육용 환경의 정책 동작과 검증 결과를 다룹니다. 게시 전 실제 서비스 주소·계정·서버 설정·세부 공격 페이로드가 포함되지 않았는지 확인하고, 필요 시 비식별화합니다.
 
 ## 운영 자동화
 
